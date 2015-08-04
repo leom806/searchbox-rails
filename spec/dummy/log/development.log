@@ -1,0 +1,2621 @@
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DummyModel (20150801003601)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150801003601"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDummyModel (20150801003654)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "dummy_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "field" varchar) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150801003654"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mDummyModel Load (0.1ms)[0m  [1mSELECT "dummy_models".* FROM "dummy_models" WHERE "dummy_models"."field" = ?[0m  [["field", "1"]]
+
+
+Started GET "/" for ::1 at 2015-07-31 22:10:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `concept' for #<#<Class:0x007f8148fa8360>:0x007f8148f9af08>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__876101218952534460_70096638559940'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 22:11:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (16.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `concept' for #<#<Class:0x007f99560c0f20>:0x007f9955943d38>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__2468617022354602379_70148244041660'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 22:12:44 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `concept' for #<#<Class:0x007fa44004be10>:0x007fa44004b438>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___2597444804006787503_70171678402000'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 22:20:41 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant Waldo::Searchbox):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__1180964370931476142_70176404601820'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 23:01:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 193ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-31 23:01:08 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-07-31 23:01:08 -0300
+
+
+Started GET "/" for ::1 at 2015-07-31 23:08:58 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-07-31 23:08:58 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-31 23:08:58 -0300
+
+
+Started GET "/" for ::1 at 2015-07-31 23:09:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 194ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-07-31 23:09:08 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-31 23:09:08 -0300
+
+
+Started GET "/" for ::1 at 2015-07-31 23:23:03 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant Waldo::Searchbox::ScopePresenter):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__4452357659961690840_70339477503040'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 23:23:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (comparison of FalseClass with true failed):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___1715067237076434175_70338130478020'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 23:24:30 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (comparison of FalseClass with true failed):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___1715067237076434175_70338130478020'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 23:24:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 215ms (Views: 212.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-07-31 23:24:36 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-31 23:24:36 -0300
+
+
+Started GET "/" for ::1 at 2015-07-31 23:30:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 204ms (Views: 200.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-31 23:30:31 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-07-31 23:30:31 -0300
+
+
+Started GET "/" for ::1 at 2015-07-31 23:40:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (private method `scopes_with_values' called for []:Search::Dummy):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___2821330022451942644_70299676921420'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 23:41:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 223ms (Views: 200.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-31 23:41:58 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-07-31 23:41:58 -0300
+
+
+Started GET "/" for ::1 at 2015-07-31 23:43:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (131520.8ms)
+Completed 200 OK in 131748ms (Views: 131721.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-31 23:45:55 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-07-31 23:45:55 -0300
+  [1m[36mDummyModel Load (0.7ms)[0m  [1mSELECT "dummy_models".* FROM "dummy_models" WHERE "dummy_models"."field" = ?[0m  [["field", "123"]]
+  [1m[35mDummyModel Load (0.2ms)[0m  SELECT "dummy_models".* FROM "dummy_models" WHERE "dummy_models"."field" = ?  [["field", "123"]]
+
+
+Started GET "/" for ::1 at 2015-08-04 13:48:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `bool?' for #<Waldo::Scope:0x007fa782fe0db8>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___3678689014087916987_70178741418840'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 13:49:34 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bool?' for #<Waldo::Scope:0x007fa782fe0db8>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___3678689014087916987_70178741418840'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 13:49:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (uninitialized constant Waldo::Searchbox::ScopePresenter):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___203069621388024235_70295686323700'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 13:50:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___1486357333015939373_70128956896780'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 13:54:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__4268630749083873050_70184247618680'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 13:56:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.1ms)
+
+SystemStackError (stack level too deep):
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___4395550539232765717_70113211083520'
+
+
+
+
+Started GET "/" for ::1 at 2015-08-04 13:57:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.1ms)
+
+SystemStackError (stack level too deep):
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___3516617825805591916_70238870790280'
+
+
+
+
+Started GET "/" for ::1 at 2015-08-04 14:07:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 198ms (Views: 186.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:07:59 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:08:00 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:09:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (23064.5ms)
+Completed 200 OK in 23304ms (Views: 23263.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:10:12 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:10:12 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:11:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (50317.8ms)
+Completed 200 OK in 50528ms (Views: 50519.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 14:13:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 195ms (Views: 187.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:13:42 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:13:42 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:15:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/search/dummy.rb:8:in `block in <class:Dummy>'
+  app/controllers/search_controller.rb:3:in `new'
+  app/controllers/search_controller.rb:3:in `index'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 14:16:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/search/dummy.rb:8:in `block in <class:Dummy>'
+  app/controllers/search_controller.rb:3:in `new'
+  app/controllers/search_controller.rb:3:in `index'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 14:17:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 162ms (Views: 158.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:17:11 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:17:11 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:17:39 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:17:39 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:17:39 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:37:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `value' for []:Array):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__139590486753617249_70316445276720'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 14:43:06 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `value' for []:Array):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__139590486753617249_70316445276720'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 14:44:15 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `value' for []:Array):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__139590486753617249_70316445276720'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 14:44:18 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 162ms (Views: 162.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:44:19 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:44:19 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:45:18 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:45:18 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:45:18 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:47:38 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:47:39 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:47:39 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:47:39 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:47:39 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:47:39 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:50:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 169ms (Views: 165.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-04 14:50:44 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 14:50:44 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 14:54:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'waldo-rails' with type 'text/css'):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css:15
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1802092162746218331_70286436907720'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 14:58:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'searchbox' with type 'text/css'):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4300164213446933910_70174804414720'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:12:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'searchbox' with type 'text/css'):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___205008159857560875_70354542674580'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:14:33 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'searchbox' with type 'text/css'):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3687457213412416143_70300867105680'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:18:00 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 58ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/searchbox.self-d5277a85327d8b31e60cdf6aa6a45020d9a4dcf99c2163d58b93926e4358147c.css?body=1" for ::1 at 2015-08-04 15:18:00 -0300
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-08-04 15:18:00 -0300
+
+
+Started GET "/assets/waldo-rails/application.self-c554e97af4cdc8eafeb7c6f90768774a132751893545b63619edb0e571367846.css?body=1" for ::1 at 2015-08-04 15:18:00 -0300
+
+
+Started GET "/assets/waldo-rails.self-c554e97af4cdc8eafeb7c6f90768774a132751893545b63619edb0e571367846.css?body=1" for ::1 at 2015-08-04 15:18:00 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:18:00 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:21:03 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+LoadError (cannot load such file -- sass):
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3687457213412416143_70300867105680'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:23:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 193ms (Views: 189.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2ec41c8b67140557df283f49bbd2d1da018bc920c9f6b3fd52b370a5f951991e.css?body=1" for ::1 at 2015-08-04 15:23:21 -0300
+
+
+Started GET "/assets/waldo-rails.self-6dd06d679cc39277b86d6a276a46fac7fe6eff4259889488012bec20e9fad32d.css?body=1" for ::1 at 2015-08-04 15:23:21 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:23:21 -0300
+
+
+Started GET "/assets/waldo-rails/application" for ::1 at 2015-08-04 15:23:21 -0300
+
+LoadError (cannot load such file -- sass):
+  activesupport (4.2.3) lib/active_support/dependencies.rb:274:in `require'
+  activesupport (4.2.3) lib/active_support/dependencies.rb:274:in `block in require'
+  activesupport (4.2.3) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.3) lib/active_support/dependencies.rb:274:in `require'
+  sprockets (3.2.0) lib/sprockets/autoload/sass.rb:1:in `<top (required)>'
+  sprockets (3.2.0) lib/sprockets/sass_processor.rb:47:in `initialize'
+  sprockets (3.2.0) lib/sprockets/sass_processor.rb:26:in `new'
+  sprockets (3.2.0) lib/sprockets/sass_processor.rb:26:in `instance'
+  sprockets (3.2.0) lib/sprockets/sass_processor.rb:30:in `call'
+  sprockets (3.2.0) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.2.0) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.2.0) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.2.0) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.2.0) lib/sprockets/loader.rb:86:in `load_asset_by_uri'
+  sprockets (3.2.0) lib/sprockets/loader.rb:45:in `block in load'
+  sprockets (3.2.0) lib/sprockets/loader.rb:155:in `fetch_asset_from_dependency_cache'
+  sprockets (3.2.0) lib/sprockets/loader.rb:38:in `load'
+  sprockets (3.2.0) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.2.0) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.2.0) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.2.0) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.2.0) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.2.0) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.2.0) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.2.0) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.2.0) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.2.0) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.2.0) lib/sprockets/loader.rb:86:in `load_asset_by_uri'
+  sprockets (3.2.0) lib/sprockets/loader.rb:45:in `block in load'
+  sprockets (3.2.0) lib/sprockets/loader.rb:155:in `fetch_asset_from_dependency_cache'
+  sprockets (3.2.0) lib/sprockets/loader.rb:38:in `load'
+  sprockets (3.2.0) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.2.0) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.2.0) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.2.0) lib/sprockets/base.rb:63:in `find_asset'
+  sprockets (3.2.0) lib/sprockets/environment.rb:30:in `find_asset'
+  sprockets (3.2.0) lib/sprockets/server.rb:49:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:24:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.0ms)
+
+LoadError (cannot load such file -- sass):
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3686842407911379746_70112374279760'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:25:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (It's not clear which file to import for '@import "waldo-rails"'.
+Candidates:
+  waldo-rails.css
+  waldo-rails.scss
+Please delete or rename all but one of these files.
+):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2145752835809171829_70238933708460'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:26:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 173ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-11825d6f3ee3f578eada9f8c9abb1713a685af05fbae1823b45d27568b572a31.css?body=1" for ::1 at 2015-08-04 15:26:12 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:26:12 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:26:44 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (".waldo__field--checkbox" failed to @extend ".waldo__field".
+The selector ".waldo__field" was not found.
+Use "@extend .waldo__field !optional" if the extend should be able to fail.
+):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1943313149600808782_70178362369800'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:27:15 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (".waldo__field--checkbox" failed to @extend ".waldo__field".
+The selector ".waldo__field" was not found.
+Use "@extend .waldo__field !optional" if the extend should be able to fail.
+):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1943313149600808782_70178362369800'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:27:25 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (".waldo__field--checkbox" failed to @extend ".waldo__field".
+The selector ".waldo__field" was not found.
+Use "@extend .waldo__field !optional" if the extend should be able to fail.
+):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1943313149600808782_70178362369800'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:27:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (".waldo__field--checkbox" failed to @extend ".waldo__field".
+The selector ".waldo__field" was not found.
+Use "@extend .waldo__field !optional" if the extend should be able to fail.
+):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__154589255846396755_70252821831840'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:28:30 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ae1cc3b548de0120936c55c29977b8fb4195debc61a33881bbeaac76ca4184e9.css?body=1" for ::1 at 2015-08-04 15:28:31 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:28:31 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:28:40 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (".waldo__field--checkbox" failed to @extend ".waldo__field".
+The selector ".waldo__field" was not found.
+Use "@extend .waldo__field !optional" if the extend should be able to fail.
+):
+    2: <html>
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__154589255846396755_70252821831840'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:28:46 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ae1cc3b548de0120936c55c29977b8fb4195debc61a33881bbeaac76ca4184e9.css?body=1" for ::1 at 2015-08-04 15:28:46 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:28:46 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:29:28 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:29:28 -0300
+
+
+Started GET "/assets/application.self-ae1cc3b548de0120936c55c29977b8fb4195debc61a33881bbeaac76ca4184e9.css?body=1" for ::1 at 2015-08-04 15:29:28 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:29:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 154ms (Views: 150.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ae1cc3b548de0120936c55c29977b8fb4195debc61a33881bbeaac76ca4184e9.css?body=1" for ::1 at 2015-08-04 15:29:37 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:29:37 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:34:32 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 98ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f06f2d4891d7b97a01c9d2b1fddbe6bf1596f4538f68a4ecf99f27079bbe83d3.css?body=1" for ::1 at 2015-08-04 15:34:32 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:34:32 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:34:33 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f06f2d4891d7b97a01c9d2b1fddbe6bf1596f4538f68a4ecf99f27079bbe83d3.css?body=1" for ::1 at 2015-08-04 15:34:33 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:34:33 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:34:47 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 62ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-19f47fd0b63e3e28eb0c8db54c112c32d0ef8fd874d7f72f16d3a6f671393757.css?body=1" for ::1 at 2015-08-04 15:34:47 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:34:47 -0300
+
+
+Started GET "/images/waldo-rails/filter.svg" for ::1 at 2015-08-04 15:34:47 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/waldo-rails/filter.svg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (134.6ms)
+
+
+Started GET "/images/waldo-rails/filter.svg" for ::1 at 2015-08-04 15:34:53 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/waldo-rails/filter.svg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.6ms)
+
+
+Started GET "/images/waldo-rails/filter.svg" for ::1 at 2015-08-04 15:36:12 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/waldo-rails/filter.svg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.4ms)
+
+
+Started GET "/images/waldo-rails/filter.svg" for ::1 at 2015-08-04 15:36:13 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/waldo-rails/filter.svg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.8ms)
+
+
+Started GET "/images/filter.svg" for ::1 at 2015-08-04 15:36:16 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/filter.svg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.2ms)
+
+
+Started GET "/assets/filter.svg" for ::1 at 2015-08-04 15:36:18 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/filter.svg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.6ms)
+
+
+Started GET "/assets/waldo-rails/filter.svg" for ::1 at 2015-08-04 15:36:25 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/waldo-rails/filter.svg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 15:42:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 202ms (Views: 198.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1a6ff63566db7ec636ab2ac31ef843179b092a3bf7f3d5200b47dab967d0d11d.css?body=1" for ::1 at 2015-08-04 15:42:48 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:42:48 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:42:48 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:42:49 -0300
+
+
+Started GET "/assets/application.self-1a6ff63566db7ec636ab2ac31ef843179b092a3bf7f3d5200b47dab967d0d11d.css?body=1" for ::1 at 2015-08-04 15:42:49 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:43:28 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1a6ff63566db7ec636ab2ac31ef843179b092a3bf7f3d5200b47dab967d0d11d.css?body=1" for ::1 at 2015-08-04 15:43:28 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:43:28 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:43:33 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1a6ff63566db7ec636ab2ac31ef843179b092a3bf7f3d5200b47dab967d0d11d.css?body=1" for ::1 at 2015-08-04 15:43:33 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:43:33 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:43:44 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 168ms (Views: 164.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1a6ff63566db7ec636ab2ac31ef843179b092a3bf7f3d5200b47dab967d0d11d.css?body=1" for ::1 at 2015-08-04 15:43:44 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:43:44 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:44:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 140ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:44:03 -0300
+
+
+Started GET "/assets/application.self-1a6ff63566db7ec636ab2ac31ef843179b092a3bf7f3d5200b47dab967d0d11d.css?body=1" for ::1 at 2015-08-04 15:44:03 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:44:39 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:46:19 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4e425130b9dd04aa8ab8af9387749a50e5f6ba6c098290b889f636a3b1410ca8.css?body=1" for ::1 at 2015-08-04 15:46:19 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:46:19 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:48:03 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 65ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:48:03 -0300
+
+
+Started GET "/assets/application.self-db37810972d4c317908c435678809be731df2fb03d61453b02660b3c936585b6.css?body=1" for ::1 at 2015-08-04 15:48:03 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:48:03 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:50:23 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 61ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:50:23 -0300
+
+
+Started GET "/assets/application.self-74112ab7625465d6567949dc32ee8bda58080d3ae18e2aa5b6c218efc0869b62.css?body=1" for ::1 at 2015-08-04 15:50:23 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:50:49 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-74112ab7625465d6567949dc32ee8bda58080d3ae18e2aa5b6c218efc0869b62.css?body=1" for ::1 at 2015-08-04 15:50:49 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:50:49 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:50:49 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:51:04 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c74c80c0e0c823b6b29ba8ff099218c5864885f8f77a62c7c07bbfa520ce8f43.css?body=1" for ::1 at 2015-08-04 15:51:04 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:51:04 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:51:04 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:52:04 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e22e790a1a96be258e88dcc74a52b1094866ee49414bbf5e8c31eaf93bb1acda.css?body=1" for ::1 at 2015-08-04 15:52:05 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:52:05 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:52:05 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:52:39 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-dfecf86e12393769abc68a6c3f5a5871d81dac312c67fc796e6185114a52816c.css?body=1" for ::1 at 2015-08-04 15:52:39 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:52:39 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:52:39 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:53:22 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5d8685ff15115c0f3a5b73e359a9d64bc4d199a3eb5e76448485ae8d4670ea15.css?body=1" for ::1 at 2015-08-04 15:53:22 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:53:22 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:53:22 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:53:56 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-45f43a4ec88c148023cf07d81926f5658327669a7175ac0b64954a8bf644f5f7.css?body=1" for ::1 at 2015-08-04 15:53:56 -0300
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:53:56 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:53:56 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 15:54:15 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 60ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 15:54:15 -0300
+
+
+Started GET "/assets/application.self-cb3c72b865024ff8805ddcd1bc0c5f51c459d348b658f3197b92295d135c8469.css?body=1" for ::1 at 2015-08-04 15:54:15 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 15:54:15 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:08:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 216ms (Views: 212.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for ::1 at 2015-08-04 16:08:08 -0300
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:08:08 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 16:08:08 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:09:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 225ms (Views: 222.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:09:35 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:09:35 -0300
+
+
+Started GET "/assets/searchbox.self-639e11cbee7ee73426270416b5e0a54c42d653f4126196b8626dba0b16248571.js?body=1" for ::1 at 2015-08-04 16:09:35 -0300
+
+
+Started GET "/assets/waldo-rails.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-08-04 16:09:35 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:09:48 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 129ms (Views: 128.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:09:49 -0300
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:09:49 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:09:49 -0300
+
+
+Started GET "/assets/searchbox.self-639e11cbee7ee73426270416b5e0a54c42d653f4126196b8626dba0b16248571.js?body=1" for ::1 at 2015-08-04 16:09:49 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:09:49 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:10:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 200ms (Views: 197.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:10:32 -0300
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:10:32 -0300
+
+
+Started GET "/assets/searchbox.self-9a22773b7291e3934bad18e1a3c09658e120a789ce3ad98a40747ad3533a4bed.js?body=1" for ::1 at 2015-08-04 16:10:32 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:10:32 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:10:32 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:10:42 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 69ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/searchbox.self-75a2f3b98b1af97d6a9a1bf621ac6e03ed47b921e48fc7ba0f7dfe9108a3191c.js?body=1" for ::1 at 2015-08-04 16:10:42 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:10:42 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:10:42 -0300
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:10:42 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:10:42 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:29:40 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (83.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined method `t' for #<Waldo::Searchbox:0x007ff869de2038>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___512828247331262975_70352492055320'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 16:30:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `t' for #<Waldo::Searchbox:0x007fbddc162aa0>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb__3509245510860155368_70226708939640'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 16:30:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 236ms (Views: 233.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:30:43 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:30:43 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:30:43 -0300
+
+
+Started GET "/assets/searchbox.self-5d21e3789735f6042d9f7c555cf7245f8a20f2593a885d2b03ba1e717448d883.js?body=1" for ::1 at 2015-08-04 16:30:43 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:30:43 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 16:30:43 -0300
+
+
+Started POST "/" for ::1 at 2015-08-04 16:30:47 -0300
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 16:31:11 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:31:11 -0300
+
+
+Started GET "/assets/searchbox.self-54620e73235f2266bc9faf4fc544e78937bc2a19ed463e3e52474a17bf866a4e.js?body=1" for ::1 at 2015-08-04 16:31:11 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:31:11 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:31:11 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:31:11 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:31:30 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 98ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:31:31 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:31:31 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:31:31 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:31:31 -0300
+
+
+Started GET "/assets/searchbox.self-6a5b9ab6291cd39c4ee20a668cfcf50426022a92d930d9311fc0ae19f8c4e8de.js?body=1" for ::1 at 2015-08-04 16:31:31 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:32:56 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:32:56 -0300
+
+
+Started GET "/assets/searchbox.self-6a5b9ab6291cd39c4ee20a668cfcf50426022a92d930d9311fc0ae19f8c4e8de.js?body=1" for ::1 at 2015-08-04 16:32:56 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:32:56 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:32:56 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:32:56 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:33:19 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/searchbox.self-1f6c3cca706fcb10b09dc10542d350946760457e945c353e3a4ca1bc0561f950.js?body=1" for ::1 at 2015-08-04 16:33:19 -0300
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:33:19 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:33:19 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:33:19 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:33:19 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:33:38 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:33:38 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:33:38 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:33:38 -0300
+
+
+Started GET "/assets/searchbox.self-1f6c3cca706fcb10b09dc10542d350946760457e945c353e3a4ca1bc0561f950.js?body=1" for ::1 at 2015-08-04 16:33:38 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:33:38 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:35:53 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 91ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:35:53 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:35:53 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:35:53 -0300
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:35:53 -0300
+
+
+Started GET "/assets/searchbox.self-c361ea918785d32e1b09ba6f1bddd2c878bd321a9f29eef58e720ed25640418c.js?body=1" for ::1 at 2015-08-04 16:35:53 -0300
+
+
+Started GET "/?page=2" for ::1 at 2015-08-04 16:36:03 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?page=2" for ::1 at 2015-08-04 16:36:43 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:36:43 -0300
+
+
+Started GET "/assets/searchbox.self-d90366fb7b2e4db9b13c2fcbb452d20c899d88e7be02a11c0c1eb07246828d7f.js?body=1" for ::1 at 2015-08-04 16:36:43 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:36:43 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:36:43 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:36:43 -0300
+
+
+Started POST "/?page=2" for ::1 at 2015-08-04 16:36:46 -0300
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.2ms)
+
+
+Started POST "/?page=2" for ::1 at 2015-08-04 16:36:59 -0300
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/marcelopiva/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.7ms)
+
+
+Started GET "/?page=2" for ::1 at 2015-08-04 16:37:01 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:37:01 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:37:01 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:37:01 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:37:01 -0300
+
+
+Started GET "/assets/searchbox.self-d90366fb7b2e4db9b13c2fcbb452d20c899d88e7be02a11c0c1eb07246828d7f.js?body=1" for ::1 at 2015-08-04 16:37:01 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=fulltext%3A%22%22+author%3A%22%22+name%3A%22%22&fulltext=&author=&name=" for ::1 at 2015-08-04 16:37:04 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"fulltext:\"\" author:\"\" name:\"\"", "fulltext"=>"", "author"=>"", "name"=>""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `where' for nil:NilClass):
+  app/controllers/search_controller.rb:3:in `new'
+  app/controllers/search_controller.rb:3:in `index'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 16:45:46 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 346ms (Views: 342.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/searchbox.self-c36345210683651ef81c3b622554d400ad973952a65952b927707fab7c38e2dd.js?body=1" for ::1 at 2015-08-04 16:45:46 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=&fulltext=&author=&name=" for ::1 at 2015-08-04 16:45:50 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"", "fulltext"=>"", "author"=>"", "name"=>""}
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=&fulltext=&author=&name=" for ::1 at 2015-08-04 16:46:10 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"", "fulltext"=>"", "author"=>"", "name"=>""}
+  Rendered search/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=has%3Aattachment&fulltext=&author=&name=&has=attachment" for ::1 at 2015-08-04 16:46:15 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"has:attachment", "fulltext"=>"", "author"=>"", "name"=>"", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=has%3Aattachment&fulltext=&author=&name=&has=attachment" for ::1 at 2015-08-04 16:47:23 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"has:attachment", "fulltext"=>"", "author"=>"", "name"=>"", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:47:23 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:47:23 -0300
+
+
+Started GET "/assets/searchbox.self-c36345210683651ef81c3b622554d400ad973952a65952b927707fab7c38e2dd.js?body=1" for ::1 at 2015-08-04 16:47:23 -0300
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:47:23 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:47:23 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=q%3A%22has%3Aattachment%22+author%3A%22Autor%22+has%3Aattachment&author=Autor&name=&has=attachment" for ::1 at 2015-08-04 16:47:28 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"q:\"has:attachment\" author:\"Autor\" has:attachment", "author"=>"Autor", "name"=>"", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=q%3A%22has%3Aattachment%22+author%3A%22Autor%22+has%3Aattachment&author=Autor&name=&has=attachment" for ::1 at 2015-08-04 16:49:02 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"q:\"has:attachment\" author:\"Autor\" has:attachment", "author"=>"Autor", "name"=>"", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 87ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/searchbox.self-ae7a8a446f39de0a6e0b4fe1bc806e06cbe9d1edf2225830bbc9c228d2c5aa07.js?body=1" for ::1 at 2015-08-04 16:49:02 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:49:02 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:49:02 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:49:02 -0300
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:49:02 -0300
+
+
+Started GET "/" for ::1 at 2015-08-04 16:49:06 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+has%3Aattachment+&author=Autor&name=&has=attachment" for ::1 at 2015-08-04 16:49:09 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" has:attachment ", "author"=>"Autor", "name"=>"", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+has%3Aattachment+author%3A%22Autor%22+has%3Aattachment+teste&author=Autor&name=&has=attachment" for ::1 at 2015-08-04 16:49:13 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" has:attachment author:\"Autor\" has:attachment teste", "author"=>"Autor", "name"=>"", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+has%3Aattachment+author%3A%22Autor%22+has%3Aattachment+teste&author=Autor&name=&has=attachment" for ::1 at 2015-08-04 16:49:18 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" has:attachment author:\"Autor\" has:attachment teste", "author"=>"Autor", "name"=>"", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+has%3Aattachment+author%3A%22Autor%22+has%3Aattachment+teste&author=Autor&name=&has=attachment" for ::1 at 2015-08-04 16:52:51 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" has:attachment author:\"Autor\" has:attachment teste", "author"=>"Autor", "name"=>"", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:52:51 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:52:51 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:52:51 -0300
+
+
+Started GET "/assets/searchbox.self-c36345210683651ef81c3b622554d400ad973952a65952b927707fab7c38e2dd.js?body=1" for ::1 at 2015-08-04 16:52:51 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:52:51 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment&author=Autor&name=&is=active&has=attachment" for ::1 at 2015-08-04 16:52:55 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment", "author"=>"Autor", "name"=>"", "is"=>"active", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment&author=Autor&name=&is=active&has=attachment" for ::1 at 2015-08-04 16:52:58 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment", "author"=>"Autor", "name"=>"", "is"=>"active", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment&author=Autor&name=&is=active&has=attachment" for ::1 at 2015-08-04 16:53:06 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment", "author"=>"Autor", "name"=>"", "is"=>"active", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment&author=Autor&name=&is=active&has=attachment" for ::1 at 2015-08-04 16:53:12 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment", "author"=>"Autor", "name"=>"", "is"=>"active", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment&author=Autor&name=&is=active&has=attachment" for ::1 at 2015-08-04 16:53:23 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment", "author"=>"Autor", "name"=>"", "is"=>"active", "has"=>"attachment"}
+  Rendered search/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 16:53:29 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 16:55:10 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 71ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab4635d70915ecf5d8fdb56f7d0355557d63643550e581f6589b1fd3041d11fc.css?body=1" for ::1 at 2015-08-04 16:55:10 -0300
+
+
+Started GET "/assets/searchbox.self-3431f764dddeaf4f7674949fa1b01767be0f1665c1a11785537d481b870131eb.js?body=1" for ::1 at 2015-08-04 16:55:10 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 16:55:10 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 16:55:10 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 16:55:10 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment" for ::1 at 2015-08-04 16:55:12 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment"}
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment+asdasd" for ::1 at 2015-08-04 16:55:16 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment asdasd"}
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22" for ::1 at 2015-08-04 16:55:22 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\""}
+  Rendered search/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22" for ::1 at 2015-08-04 17:01:52 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\""}
+  Rendered search/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 147ms (Views: 146.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:01:52 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:01:52 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:01:52 -0300
+
+
+Started GET "/assets/searchbox.self-a217477e4c572b6e39d66b1a2d8c90ca779c9458769efede4b91018b386953b7.js?body=1" for ::1 at 2015-08-04 17:01:53 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:01:53 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 17:01:53 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment+null" for ::1 at 2015-08-04 17:02:01 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment null"}
+  Rendered search/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment+null+asdasd" for ::1 at 2015-08-04 17:02:03 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment null asdasd"}
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+is%3Aactive+has%3Aattachment+asdasd" for ::1 at 2015-08-04 17:02:05 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" is:active has:attachment asdasd"}
+  Rendered search/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=author%3A%22Autor%22+has%3Aattachment+null" for ::1 at 2015-08-04 17:02:13 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"author:\"Autor\" has:attachment null"}
+  Rendered search/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 17:02:44 -0300
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=Jo%C3%A3o" for ::1 at 2015-08-04 17:03:06 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"João"}
+  Rendered search/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=Jo%C3%A3o" for ::1 at 2015-08-04 17:03:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"João"}
+  Rendered search/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 193ms (Views: 189.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:03:56 -0300
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:03:56 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:03:56 -0300
+
+
+Started GET "/assets/searchbox.self-a217477e4c572b6e39d66b1a2d8c90ca779c9458769efede4b91018b386953b7.js?body=1" for ::1 at 2015-08-04 17:03:56 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:03:56 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=Jo%C3%A3o" for ::1 at 2015-08-04 17:04:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"João"}
+  Rendered search/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 182ms (Views: 179.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:04:36 -0300
+
+
+Started GET "/assets/searchbox.self-a217477e4c572b6e39d66b1a2d8c90ca779c9458769efede4b91018b386953b7.js?body=1" for ::1 at 2015-08-04 17:04:36 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:04:36 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:04:36 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:04:36 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=Jo%C3%A3o" for ::1 at 2015-08-04 17:16:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"João"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  app/controllers/search_controller.rb:3:in `new'
+  app/controllers/search_controller.rb:3:in `index'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=Jo%C3%A3o" for ::1 at 2015-08-04 17:17:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"João"}
+  Rendered search/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 191ms (Views: 187.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:17:09 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:17:09 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:17:09 -0300
+
+
+Started GET "/assets/searchbox.self-a217477e4c572b6e39d66b1a2d8c90ca779c9458769efede4b91018b386953b7.js?body=1" for ::1 at 2015-08-04 17:17:09 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:17:09 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 17:17:09 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+null" for ::1 at 2015-08-04 17:17:13 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active null"}
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+null" for ::1 at 2015-08-04 17:18:39 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active null"}
+  Rendered search/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:18:39 -0300
+
+
+Started GET "/assets/searchbox.self-a217477e4c572b6e39d66b1a2d8c90ca779c9458769efede4b91018b386953b7.js?body=1" for ::1 at 2015-08-04 17:18:39 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:18:39 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:18:39 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:18:39 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+null" for ::1 at 2015-08-04 17:19:54 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active null"}
+  Rendered search/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `value' for #<Array:0x007fbec24e14d8>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___922206737355754344_70228680099760'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+null" for ::1 at 2015-08-04 17:20:08 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active null"}
+  Rendered search/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `value' for #<Array:0x007fbec6839028>):
+    1: <%= concept("waldo/searchbox", @search) %>
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___922206737355754344_70228680099760'
+
+
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/marcelopiva/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+null" for ::1 at 2015-08-04 17:20:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active null"}
+  Rendered search/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 241ms (Views: 237.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:20:18 -0300
+
+
+Started GET "/assets/searchbox.self-3d6f41b1f04d94bd234da5ae6a808caae1f7f81f63a6733cf447cf628f1f4934.js?body=1" for ::1 at 2015-08-04 17:20:18 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:20:18 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:20:18 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:20:18 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 17:20:19 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+null" for ::1 at 2015-08-04 17:20:53 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active null"}
+  Rendered search/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+SystemStackError (stack level too deep):
+  app/views/search/index.html.erb:1:in `_app_views_search_index_html_erb___1275402055703799663_70229099502120'
+
+
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+null" for ::1 at 2015-08-04 17:21:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active null"}
+  Rendered search/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 164ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/searchbox.self-3d6f41b1f04d94bd234da5ae6a808caae1f7f81f63a6733cf447cf628f1f4934.js?body=1" for ::1 at 2015-08-04 17:21:29 -0300
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:21:29 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:21:29 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:21:29 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:21:29 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 17:21:29 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive" for ::1 at 2015-08-04 17:21:31 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active"}
+  Rendered search/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive" for ::1 at 2015-08-04 17:21:36 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active"}
+  Rendered search/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/searchbox.self-3d6f41b1f04d94bd234da5ae6a808caae1f7f81f63a6733cf447cf628f1f4934.js?body=1" for ::1 at 2015-08-04 17:21:36 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:21:36 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:21:36 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:21:36 -0300
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:21:36 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive" for ::1 at 2015-08-04 17:21:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active"}
+  Rendered search/index.html.erb within layouts/application (78012.5ms)
+Completed 200 OK in 78220ms (Views: 78214.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive" for ::1 at 2015-08-04 17:23:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active"}
+  Rendered search/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 184ms (Views: 179.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:23:16 -0300
+
+
+Started GET "/assets/searchbox.self-3d6f41b1f04d94bd234da5ae6a808caae1f7f81f63a6733cf447cf628f1f4934.js?body=1" for ::1 at 2015-08-04 17:23:16 -0300
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:23:16 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:23:16 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:23:16 -0300
+
+
+Started GET "/assets/waldo-rails/filter-8cf0c0321e111a22485cfbc6e456eac65d10dee3500701d013fe581070042aab.svg" for ::1 at 2015-08-04 17:23:16 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+" for ::1 at 2015-08-04 17:23:23 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active "}
+  Rendered search/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive++teste" for ::1 at 2015-08-04 17:23:25 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active  teste"}
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=is%3Aactive+has%3Aattachment+teste" for ::1 at 2015-08-04 17:23:29 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"is:active has:attachment teste"}
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=name%3A%22nome%22+is%3Aactive+has%3Aattachment+teste" for ::1 at 2015-08-04 17:24:07 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"name:\"nome\" is:active has:attachment teste"}
+  Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 43ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=name%3A%22nome%22+is%3Aactive+has%3Aattachment+teste" for ::1 at 2015-08-04 17:25:57 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"name:\"nome\" is:active has:attachment teste"}
+  Rendered search/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 137ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 17:25:57 -0300
+
+
+Started GET "/assets/application.self-6928d787f68c3b362ba38e1825b0d3df0fe00cec23713d10a6da6266e996fa7c.css?body=1" for ::1 at 2015-08-04 17:25:57 -0300
+
+
+Started GET "/assets/waldo-rails.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2015-08-04 17:25:57 -0300
+
+
+Started GET "/assets/searchbox.self-3d6f41b1f04d94bd234da5ae6a808caae1f7f81f63a6733cf447cf628f1f4934.js?body=1" for ::1 at 2015-08-04 17:25:57 -0300
+
+
+Started GET "/assets/application.self-89655ea40500a342dad2ac571974c28abab3e3897c63fef4c2d06d7564836879.js?body=1" for ::1 at 2015-08-04 17:25:57 -0300
+
+
+Started GET "/?utf8=%E2%9C%93&q=name%3A%22nome%22+is%3Aactive+has%3Aattachment+teste" for ::1 at 2015-08-04 17:26:00 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"name:\"nome\" is:active has:attachment teste"}
+  Rendered search/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q=name%3A%22nome%22+is%3Aactive+has%3Aattachment+teste+2" for ::1 at 2015-08-04 17:26:05 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"name:\"nome\" is:active has:attachment teste 2"}
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
