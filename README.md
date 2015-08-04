@@ -2,7 +2,9 @@
 
 ### INSTALL
 
-`gem 'waldo-rails'`
+```ruby
+gem 'waldo-rails', github: 'tracersoft/waldo-rails'
+```
 
 ### GETTING STARTED
 
