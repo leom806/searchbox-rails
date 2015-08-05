@@ -4,9 +4,12 @@
       <span class="<%= filter_class %> searchbox__action-filter"></span>
     <% end %>
     <%= form_tag request.url, method: :GET, class: 'searchbox__form' do %>
-      <%= text_field_tag :q, params[:q], class: "searchbox__q", data: {
+      <%= text_field_tag :q, params[:q], class: "searchbox__q",
+        placeholder: I18n.t('searchbox.placeholder'),
+        data: {
           fulltext: fulltext_scope.value.to_s
-      } %>
+        }
+      %>
     <% end %>
   </div>
 
