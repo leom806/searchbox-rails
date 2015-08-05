@@ -21,6 +21,10 @@ $(document).ready(function() {
         $form.submit();
       })
 
+      $q.on('change', function() {
+        $q.data('fulltext', '');
+      })
+
       function serializeFields($fields) {
         return $fields.map(function() {
           var $field = $(this);
