@@ -1,9 +1,9 @@
-## waldo-rails
+## searchbox-rails
 
 ### INSTALL
 
 ```ruby
-gem 'waldo-rails', github: 'tracersoft/waldo-rails'
+gem 'searchbox-rails', github: 'tracersoft/searchbox-rails'
 ```
 
 ### GETTING STARTED
@@ -13,10 +13,10 @@ some_controller.rb
 @search = Search::Dummy.new(params[:q])
 ```
 
-where `Search::Dummy` is a `Waldo::Search`, more in [Waldo
-help](http://github.com/tracersoft/waldo)
+where `Search::Dummy` is a `Searchbox::Search`, more in [Searchbox
+help](http://github.com/tracersoft/searchbox)
 
 some_view.erb
 ```erb
-<%= concept("waldo/searchbox", @search) %>
+<%= concept("searchbox/searchbox", @search) %>
 ```

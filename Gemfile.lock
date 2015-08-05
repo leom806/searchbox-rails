@@ -1,18 +1,17 @@
 PATH
   remote: .
   specs:
-    waldo-rails (0.0.1)
+    searchbox-rails (0.0.1)
       cells
       cells-erb
       jquery-rails
-      rails
-      rails (~> 4.2.3)
+      rails (~> 4.2.2)
       sass-rails
 
 PATH
-  remote: ../waldo
+  remote: ../searchbox
   specs:
-    waldo (0.0.2)
+    searchbox (0.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -164,6 +163,6 @@ DEPENDENCIES
   pry
   rspec
   rspec-rails
+  searchbox!
+  searchbox-rails!
   sqlite3
-  waldo!
-  waldo-rails!

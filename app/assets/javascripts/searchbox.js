@@ -1,14 +1,15 @@
+//= require jquery
+
 $(document).ready(function() {
-  $(document).on('waldo:load', function() {
-    $('.waldo').each(function() {
-      var $waldo = $(this);
-      var $form = $(this).find('.waldo__form')
-      var $advancedSearch = $waldo.find('.waldo__advanced-search');
-      var $filterIcon = $waldo.find('.waldo__action-filter');
-      var $fulltextInput = $waldo.find('.waldo__fulltext-input input')
-      var $submit = $waldo.find('.waldo__submit')
-      var $fields = $waldo.find('.waldo__input')
-      var $q = $waldo.find('.waldo__q')
+  $(document).on('searchbox:load', function() {
+    $('.searchbox').each(function() {
+      var $searchbox = $(this);
+      var $form = $(this).find('.searchbox__form')
+      var $advancedSearch = $searchbox.find('.searchbox__advanced-search');
+      var $filterIcon = $searchbox.find('.searchbox__action-filter');
+      var $submit = $searchbox.find('.searchbox__submit')
+      var $fields = $searchbox.find('.searchbox__input')
+      var $q = $searchbox.find('.searchbox__q')
 
       $filterIcon.click(function() {
         $advancedSearch.slideToggle(50);
@@ -37,5 +38,5 @@ $(document).ready(function() {
     })
   })
 
-  $(document).trigger('waldo:load');
+  $(document).trigger('searchbox:load');
 })

@@ -1,0 +1,29 @@
+.searchbox__fulltext {
+  position: relative;
+  .searchbox__filter-icon {
+    position: absolute;
+    right: 8px;
+    height: 100%;
+  }
+
+  .searchbox__q {
+    width: 100%;
+    padding-right: 26px;
+  }
+}
+
+.searchbox__filter-icon {
+  background: image-url('searchbox/filter.svg') no-repeat center center;
+  background-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.searchbox__filter-icon--active {
+  @extend .searchbox__filter-icon;
+  background-image: image-url('searchbox/filter-active.svg');
+}
+
+.searchbox__advanced-search {
+  display: none;
+}

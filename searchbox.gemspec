@@ -2,16 +2,16 @@ $:.push File.expand_path("../lib", __FILE__)
 $:.push File.expand_path("../app", __FILE__)
 
 # Maintain your gem's version:
-require "waldo/rails/version"
+require "searchbox/rails/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "waldo-rails"
-  s.version     = Waldo::Rails::VERSION
+  s.name        = "searchbox-rails"
+  s.version     = Searchbox::Rails::VERSION
   s.authors     = ["Marcelo Piva"]
   s.email       = ["m.pivaa@gmail.com"]
-  s.homepage    = "http://github.com/tracersoft/waldo-rails"
-  s.summary     = "Rails cells for build advanced search based on waldo"
+  s.homepage    = "http://github.com/tracersoft/searchbox-rails"
+  s.summary     = "Rails cells for build advanced search based on searchbox"
   s.description = s.summary
   s.license     = "MIT"
 

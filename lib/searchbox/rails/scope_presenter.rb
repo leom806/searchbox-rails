@@ -1,4 +1,4 @@
-module Waldo
+module Searchbox
   module Rails
     class ScopePresenter < SimpleDelegator
       def initialize(scope)
@@ -20,7 +20,7 @@ module Waldo
       end
 
       def bool?
-        @scope.kind_of? Waldo::BoolScope
+        @scope.kind_of? Searchbox::BoolScope
       end
     end
   end
