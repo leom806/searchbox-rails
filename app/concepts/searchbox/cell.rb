@@ -19,6 +19,10 @@ module Searchbox
         .map { |s| Searchbox::Rails::ScopePresenter.new(s) }
     end
 
+    def has_scopes?
+      scopes.any?
+    end
+
     def filter_active?
       scopes.any? { |s| s.value }
     end
