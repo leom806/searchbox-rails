@@ -1,7 +1,5 @@
 module Searchbox
   class Cell < Cell::Concept
-    cache :show, ->(m) { m.to_s }
-
     def self.absolute_view_path
       "#{Searchbox::Rails.root}/app/concepts"
     end
