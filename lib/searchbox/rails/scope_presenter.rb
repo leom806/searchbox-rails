@@ -7,12 +7,7 @@ module Searchbox
       end
 
       def label
-        _name = if bool?
-                  "#{criteria}?"
-                else
-                  name
-                end
-        _name.to_s.humanize
+        I18n.t(name, scope: 'searchbox.label')
       end
 
       def order
