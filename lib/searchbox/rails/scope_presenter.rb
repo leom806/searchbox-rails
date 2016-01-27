@@ -7,7 +7,8 @@ module Searchbox
       end
 
       def label
-        I18n.t(name, scope: 'searchbox.label')
+        text = bool? ? criteria : name
+        I18n.t(text, scope: 'searchbox.label')
       end
 
       def order
