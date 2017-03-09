@@ -17,23 +17,25 @@
   <% if has_scopes? %>
     <div class="searchbox__advanced-search">
       <% scopes.each do |s| %>
-        <div class="searchbox__scope searchbox__scope--<%= s.name %>">
-          <% if s.bool? %>
-            <div class="searchbox__field--checkbox">
-              <%= check_box_tag s.name, s.criteria, s.value, class: "searchbox__input" %>
-            </div>
-            <div class="searchbox__label--checkbox">
-              <%= s.label %>
-            </div>
-          <% else %>
-            <div class="searchbox__label">
-              <%= s.label %>
-            </div>
-            <div class="searchbox__field">
-              <%= text_field_tag s.name, s.value, class: "searchbox__input" %>
-            </div>
-          <% end %>
-        </div>
+        <% if s.name.class != Array %>
+          <div class="searchbox__scope searchbox__scope--<%= s.name %>">
+            <% if s.bool? %>
+              <div class="searchbox__field--checkbox">
+                <%= check_box_tag s.name, s.criteria, s.value, class: "searchbox__input" %>
+              </div>
+              <div class="searchbox__label--checkbox">
+                <%= s.label %>
+              </div>
+            <% else %>
+              <div class="searchbox__label">
+                <%= s.label %>
+              </div>
+              <div class="searchbox__field">
+                <%= text_field_tag s.name, s.value, class: "searchbox__input" %>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
       <% end %>
 
       <button class="searchbox__submit"><%= I18n.t('searchbox.submit') %></button>
